@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ITC Precourse RoiDahari</title>
+    <link href="../css/style.css" rel="stylesheet" />
+    <!-- <link href="./Explora-Regular.ttf"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/all.css">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <a href="./index.html">Home</a>
+                    <a href="./about.html">about</a>
+                    <a href="./contact.html">Contact</a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class='contact'>
+        <h1>Contact</h1>
+        <section>
+            <form onkeyup='validateForm()' class='contact-form' name='contact' id='contact-form' action="" method="POST">
+                <label>
+               First Name:
+                <input type="text" placeholder="John"  required name="_firstname">
+              </label>
+                <label>
+                Last Name:
+                 <input type="text" placeholder="Doe" name="_lastname">
+               </label>
+                <label>
+    Your email:
+    <input type="email" required placeholder="johndoe@gmail.com" name="_replyto">
+  </label>
+                <label>
+    Your message:
+    <textarea name="message"  placeholder="Tell me anything" name="_message" required></textarea>
+  </label>
+
+                <label>
+    Do you like coffee? :
+    <select name="coffee" required id="coffee">
+        <option value="yes">Yes</option>
+        <option value="no">No!</option>
+        <option value="sometimes">Sometimes</option>
+        <option value="never">Never</option>
+      </select>
+            </label>
+                <!-- your other form fields go here -->
+                <button id='contact-button' disabled onclick="submit()" type="submit">Send</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <a href="./index.html">Home</a>
+                <a href="./about.html">about</a>
+                <a href="./contact.html">Contact</a>
+            </ul>
+        </nav>
+        <div id='built-with'>
+        </div>
+    </footer>
+    <script src="../js/footer.js"></script>
+    <script src="../js/contact.js"></script>
+
+</body>
+
+</html>
